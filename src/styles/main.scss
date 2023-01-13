@@ -64,10 +64,14 @@ nav {
 			}
 		}
 	}}
+  .menu-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
   //menu
-  .nav .menu {
-    clear: both;
-    max-height: 0;
+   .menu {
+    display: none;
     transition: max-height .2s ease-out;
   }
   /* menu icon */
@@ -75,22 +79,21 @@ nav {
    .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
    .nav-icon {
-    background:var(--text-color);
+    background:$text-color;
     display: block;
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
   }
-  .nav .menu-icon .nav-icon:before,
-  .nav .menu-icon .nav-icon:after {
-    background:var(--text-color);
+   .nav-icon:before,
+   .nav-icon:after {
+    background:$text-color;
     content: '';
     display: block;
     height: 100%;
@@ -107,15 +110,18 @@ nav {
   }
     /* menu btn */
   
-    .nav .menu-btn {
+  .menu-btn {
       display: none;
     }
-    
-    .nav .menu-btn:checked ~ .menu {
-      max-height: 300px;
+    // .menu{
+    //   display: block;
+    // }
+    .menu-btn:checked ~ .menu {
+      min-height: 300px;
+      display: block;
     }
     
-    .nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    .menu-btn:checked ~ .menu-icon .nav-icon {
       background: transparent;
     }
     
@@ -134,14 +140,17 @@ nav {
     /* Medium devices (landscape tablets, 768px and up) Until Desktop version*/
   
     @media (min-width: 768px) {
-      .nav li {
-        float: left;
+      .menu-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
       }
+      //menu
       .nav .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-      }
+        display: flex;
+        justify-content: flex-end;
+        transition: max-height .2s ease-out;
+    
       .nav .menu-icon {
         display: none;
       }
@@ -159,7 +168,7 @@ nav {
       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border: none;
-      color:var(--secondary-color);
+      color:$secondary-color;
       border-radius: 8px;
       font-weight: bold;
       font-style: italic;
@@ -167,7 +176,7 @@ nav {
       line-height: 10px;
       top: 0;
       position: absolute;
-      animation: slidein 3s 1s linear ;
+      animation: slide 3s 1s linear ;
       margin-left: 10px;
       margin-top: 15px;
       padding: 10px 30px;
@@ -178,7 +187,7 @@ nav {
   }
   
     
-    @keyframes slidein {
+    @keyframes slide {
       from {
         margin-left: 100%;
       }
@@ -461,4 +470,5 @@ nav {
 		}
 	}
 }
+    }
 
