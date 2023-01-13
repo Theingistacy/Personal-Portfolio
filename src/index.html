@@ -4,9 +4,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-    <title>Hello, World!</title>
+    <title>My Personal Portfolio</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-  </body>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="nav">
+       <button type="button" class="logo"> Theingi Win Kyaw </button>   
+       <input class="menu-btn" type="checkbox" id="menu-btn" />
+       <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+       <ul class="menu">
+         <li><a href="#about">About</a></li>
+         <li><a href="#projects">Projects</a></li>
+         <li><a href="#skill-sec">Skills</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+     </nav>
+ 
+   </header>
+ <main>
+           <!-- profile image -->
+ 
+   <section class="profile">
+     <div class="profile-container">
+         <span class="profile-cover"></span>
+         <div class="img-container">
+             <img  src="./images/tg.jpg" alt="Theingi Profile Photo">
+         </div>
+         <span class="content">
+             <h3>Theingi Win Kyaw</h3>
+             <h5>Web Developer</h5>
+             <div >
+                 <button class="content-btn">Hire Me</button>
+             </div>
+         </span>
+     </div>
+   </section>
+ 
+  <!-- text intro section -->
+  <section  class="intro">
+ 
+       <h2>Hello!I am Theingi Win Kyaw.</h2><br>
+       <h2>I am a Web Developer.</h2>
+ </main>
+ <!-- Skills set Section -->
+ <section class="skill-sec">
+ 
+ <div class="skill-container">
+   <h2>SKILL BAR</h2>
+   <div class="skills">
+        <span class="name">HTML</span>
+        <div class="percent">
+           <div class="progress" style="width: 95%;"></div>
+        </div>
+        <span class="value">95%</span>
+   </div>
+   <div class="skills">
+        <span class="name">css</span>
+        <div class="percent">
+           <div class="progress" style="width: 90%;"></div>
+        </div>
+        <span class="value">90%</span>
+   </div>
+   <div class="skills">
+     <span class="name">Javascript</span>
+     <div class="percent">
+           <div class="progress" style="width: 35%;"></div>
+        </div>
+        <span class="value">35%</span>
+   </div>
+ 
+   <div class="skills">
+        <span class="name">C#</span>
+        <div class="percent">
+           <div class="progress" style="width: 57%;"></div>
+        </div>
+        <span class="value">57%</span>
+   </div>
+   <div class="skills">
+        <span class="name">Bootstrap</span>
+        <div class="percent">
+           <div class="progress" style="width: 85%;"></div>
+        </div>
+        <span class="value">85%</span>
+   </div>
+ </div>
+ </div>
+ </section>
+ 
+   </body>
 </html>
