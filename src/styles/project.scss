@@ -1,0 +1,88 @@
+// project section
+
+#projects {
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding-bottom: 120px;
+  background: #2e2e2e;
+
+}
+
+.project {
+  transition: transform 1s;
+  margin-right: 24px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: none;
+  min-height: 386px;
+  background-image: url("../images/mobile-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project h3 {
+  line-height: 44px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.project p {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 16px;
+}
+
+.project ul {
+  color: $text-color;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.probut {
+  border-color: $text-color;
+  background-color: $primary-color;
+  color: rgb(0, 0, 0);
+  height: 48px;
+  width: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  align-items: center;
+  border-radius: 20px;
+
+}
+.probut:hover {
+  background: linear-gradient(45deg, #1fe6ff, #673AB7);
+  cursor: pointer;
+}
+
+.probut:active {
+  background-color: $text-base;
+}
+
+.probut:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.probut:focus {
+  outline: 2.5px solid rgb(0, 0, 0);
+}
+@media screen and (min-width: 1024px) {
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+

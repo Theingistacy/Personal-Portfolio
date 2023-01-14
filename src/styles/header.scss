@@ -1,0 +1,143 @@
+header {
+  background: #2e2e2e;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+  // hamburger menu icon
+    .menu-icon {
+      cursor: pointer;
+      // float:right;
+      // padding: 28px 20px ;
+      padding: 28px 20px;
+      position: absolute;
+      user-select: none;
+      .nav-icon {
+        background:$text-color;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+        
+        &:before{
+          background:$text-color;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%;
+          top: 5px;
+  
+        }
+        &:after{
+          background:$text-color;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%;
+          top: -5px;
+  
+        }
+  
+      }
+    
+    }
+  
+      ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          overflow: hidden;
+      }
+      li {
+          a {
+              display: block;
+              padding: 20px 20px;
+              text-decoration: none;
+              color: $text-color;
+              font-size: 2rem;
+          }
+      }
+  }
+  .menu {
+    padding-top: 5rem;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+     li {
+         a {
+             &:hover {
+                 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+             }
+         }
+     }
+ } 
+   
+ .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .menu {
+    min-height: 300px;
+  }
+  
+  .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after {
+    top: 0;
+  }
+// for logo styling
+.logo {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  color:$secondary-color;
+  border-radius: 8px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 10px;
+  position: absolute;
+  animation: slide 3s 1s linear ;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+.logo:hover{
+  padding: 10px 35px;
+}
+
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+  }
+}
+
+
+
+
