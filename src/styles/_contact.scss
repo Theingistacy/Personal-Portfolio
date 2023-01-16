@@ -4,7 +4,7 @@
   padding: 100px;
   min-height: 100vh;
   background: $contact-bg-color;
-
+}
 .box-wrapper{
   position: relative;
   display: table;
@@ -13,7 +13,7 @@
   margin-top:35px;
   border-radius: 30px;
 }
-}
+
 .info-wrap{
   width:35%;
   height: 551px;
@@ -61,30 +61,29 @@
   color: $text-color;
 }
 }
+// icon under contact information
 .social-icons {
   list-style: none;
   text-align: center;
   margin: 20px 0px;
-
-li {
+}
+.social-icons li {
   display: inline-block;
-  i {
-    background: $text-color;
-    color: $text-primary-color;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 22%;
-    margin: 0px 5px;
-    cursor: pointer;
-    transition: all .5s;
-  }
+}
+.social-icons li i {
+  background: $text-color;
+  color: $text-primary-color;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all .5s;
   &:hover {
-    background: $text-primary-color;
-    color: $base-color;
-  }
-}
-}
- 
+  background: $text-primary-color;
+  color: $base-color;
+}}
+// form section
 .form-wrap{
   width:65%;
   float: right;
@@ -154,4 +153,34 @@ li {
   background-image: $primary-bg-color;
 }
 }
-
+    /* small screen version for form*/
+    @media only screen and (max-width: 767px) {
+      .box-wrapper{
+          width: 100%;
+      }
+      .info-wrap,
+      .form-wrap{
+          width: 100%;
+          height: inherit;
+          float: none;  
+      }
+      .info-wrap{
+          border-radius: 30px 30px 0px 0px;
+      }
+      .form-wrap{
+          border-radius: 0px 0px 30px 30px;
+      }
+      .form-group{
+          width: 100%;
+          float: none;
+          margin: 25px 0px;
+      }
+      .form-fields .form-group:last-child, 
+      .submit-button{
+          width: 100%;
+      }
+      .submit-button{
+          margin: 10px 0px;
+      }  
+  }
+  
