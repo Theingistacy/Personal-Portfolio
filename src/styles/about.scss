@@ -1,0 +1,153 @@
+#about{
+    background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%);
+    min-height:100vh;
+}
+  .portrait {
+    border: 8px solid $content-border;
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin: 20px;
+    left: 43%;
+    position: absolute;
+}
+
+.portrait img {
+    width: 248px;
+    height: 320px;
+    z-index: 1;
+}
+.portrait:hover {
+    transform: scale(1.2);
+  }
+  
+
+.underlay {
+    background: $primary-color;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    margin: 150px;
+    margin-top: 200px;
+    padding: 150px 100px 100px 100px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-text {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 22px;
+}
+
+.wrapper .dynamic-text {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+      top: -360px;
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: $primary-color;
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+   40%{
+    left: calc(100% + 30px);
+
+   }
+    60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+}
+
+.about-me {
+    font-size: 20px;
+}
+
+.about-me p {
+    font-weight:500;
+    text-align: center;
+}
+
+
+@media(max-width: 760px) {
+
+/* ABOUT ME SECTION */
+.static-text {
+    display: none;
+}
+
+.dynamic-text {
+    display: none;
+}
+
+.portrait {
+    display: none;
+}
+
+.underlay {
+    display: block;
+    width: 75%;
+    height: 80vh;
+    margin: 50px;
+    padding: 40px 10px 30px 10px;
+}
+
+.about-me {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+
+#full {
+    display: none;
+}
+
+#small {
+    font-size: 17px;
+}
+}
+  

@@ -4,18 +4,20 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "header";
 @import "desktop";
-@import "intro";
+@import "hero";
 @import "skill";
 @import "project";
+@import "contact";
+@import "about";
+
 
 
 // Write your sass code here or import partials
 
 
 body {
-	height: 100vh;
-	font-family: 'Roboto Slab', serif;
-  scroll-behavior: smooth;
-
+height: 100vh;
+font-family: 'Roboto Slab', serif;
+scroll-behavior: smooth;
 }
     

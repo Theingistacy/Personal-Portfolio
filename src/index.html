@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,6 +19,8 @@
         <span class="nav-icon"></span>
       </label>
        <ul class="menu">
+        <li><a href="#hero">Home</a></li>
+
          <li><a href="#about">About</a></li>
          <li><a href="#projects">Projects</a></li>
          <li><a href="#skill-sec">Skills</a></li>
@@ -26,10 +29,9 @@
      </nav>
  
    </header>
- <main>
+ <main id="hero">
            <!-- profile image -->
- 
-   <section class="profile">
+   <section >
      <div class="profile-container">
          <span class="profile-cover"></span>
          <div class="img-container">
@@ -39,28 +41,142 @@
              <h3>Theingi Win Kyaw</h3>
              <h5>Web Developer</h5>
              <div >
-                 <button class="content-btn">Hire Me</button>
+               <button class="content-btn">Hire Me</button>
              </div>
          </span>
      </div>
    </section>
- 
   <!-- text intro section -->
   <section  class="intro">
- 
        <h2>Hello!I am Theingi Win Kyaw.</h2><br>
        <h2>I am a Web Developer.</h2>
- </main>
- <!-- About me Section -->
+      </section>
+    </main>
+<!-- About me section start -->
+      <section id="about">
+        <hr>
+        <div class="portrait">
+        <img src="./images/mypic.jpg">
+        </div>
+        <div class="underlay">
+            <div class="body">
+                <div class="wrapper">
+                    <div class="static-text">Hello I am Theingi, and I'm a</div>
+                    <ul class="dynamic-text">
+                      <li><span>Student</span></li>
+                      <li><span>Web Developer</span></li>
+                      <li><span>Open to work</span></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="about-me" id="full">
+            <p>I am Web Development student currently studying at a DCI to earn a certificate in Full Stack Web Development where I'm learning skills such as HTML, CSS, JavaScript, responsive web design and more.
+                <br>
+                <br>
+                As an innovative problem-solver passionate about furthering my knowledge, my current focus is on expanding my skillset and putting them to practice.
+                <br>
+                <br>
+                I bring the following to every project:
+                <br>
+                Problem-solving skills and perseverance
+                <br>
+                Dedication to teamwork and flexible collaboration
+                <br>
+                A basic understanding of UX/UI principles
+                <br>
+                <br>
+                I’m excited to leverage my skills as part of a fast-paced, quality-driven team. Let’s connect!</p>
+        </div>
+        <!-- for mobile version -->
+        <div class="about-me" id="small">
+          <p>I am Web Development student currently studying at a DCI to earn a certificate in Full Stack Web Development where I'm learning skills such as HTML, CSS, JavaScript, responsive web design and more.
+            <br>
+              <br>
+              As an innovative problem-solver passionate about furthering my knowledge, my current focus is on expanding my skillset and putting them to practice.
+              <br>
+              <br>
+              I’m excited to leverage my skills as part of a fast-paced, quality-driven team. 
+              <br>
+              Let’s connect!</p>
+
+      </div>
+      </div>
+</section>
+<!-- About me section end -->
+
+
+ <section id="projects">
+    <div class="card">
+        <div class="image one"></div>
+        <div class="text text-one">
+            <h3>Product preview-card
+              </h3>
+            <p>I have done Frontend mentor challange Product preview card.</p>
+            <div >
+              <button class="project-btn"><a href="https://theingistacy.github.io/Product-preview-card/ " target="_blank">My 
+                Project</a></button>
+            </div>
+
+        </div>
+        </div>
+        <div class="card">
+          <div class="image two"></div>
+          <div class="text text-two">
+              <h3>Ktown Resturant</h3>
+              <p>Korean Resturant website for my dad.</p>
+              <div >
+                <button class="project-btn"><a href="https://theingistacy.github.io/Product-preview-card/ " target="_blank">My 
+                  Project</a></button>
+              </div>
+  
+            </div>
+          </div>
+          <div class="card">
+            <div class="image three"></div>
+            <div class="text text-three">
+                <h3>NFT preview card component</h3>
+                <p>I have done Frontend mentor challange NFT preview card.</p>
+                            <div >
+              <button class="project-btn"><a href="https://theingistacy.github.io/Product-preview-card/ " target="_blank">My 
+                Project</a></button>
+            </div>
+
+              </div>
+            </div>
+            <div class="project-title"><h2>My Projects</h2></div>
+            <div class="card">
+              <div class="image four"></div>
+              <div class="text text-four">
+                <h3>Coming Soon &#128284;
+                </div>
+              </div>
+              <div class="card">
+                <div class="image five"></div>
+                <div class="text text-five">
+                  <h3>Coming Soon &#128284;
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image six"></div>
+                  <div class="text text-six">
+                    <h3>Coming Soon &#128284;
+
+                    </h3>
+                  </div>
+                  </div>
+                              
+          </section> 
+
+
  <!-- Skills set Section -->
- <section class="skill-sec">
- 
+ <section id="skill-sec">
  <div class="skill-container">
-   <h2>SKILL BAR</h2>
+   <h2>SKILLS BAR</h2>
    <div class="skills">
         <span class="name">HTML</span>
         <div class="percent">
-           <div class="progress" style="width: 95%;"></div>
+           <div class="progress" style="width: 95%;">
+          </div>
         </div>
         <span class="value">95%</span>
    </div>
@@ -96,22 +212,57 @@
  </div>
  </div>
  </section>
- <!-- Contact Section -->
- <section id="projects">
-  <div class="project">
-    <h3>Professional Art Printing data</h3>
-    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-    <button class="probut" id="project-2" type="button">See Project</button>
-    </div>
-  <div class="project">
-    <h3>Professional Art Printing data</h3>
-    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-    <button class="probut" id="project-3" type="button">See Project</button>
+ <!-- Contact Form Section -->
+ <section id="contact">
+  <div class="box-wrapper">
+      <div class="info-wrap">
+          <h2 class="info-title">Contact Information</h2>
+          <h3 class="info-sub-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+          <ul class="info-details">
+              <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>Phone:</span> <a href="#">+ 1234 1234 99</a>
+              </li>
+              <li>
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Email:</span> <a href="#">tgwk@hotmail.com</a>
+              </li>
+              <li>
+                  <i class="fas fa-globe"></i>
+                  <span>Website:</span> <a href="#">theingistacy.com</a>
+              </li>
+          </ul>
+          <ul class="social-icons">
+              <li><a href="https://github.com/Theingistacy" target="_blank"><i class="fa-brands fa-github" ></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+      <div class="form-wrap">
+          <form action="#" method="POST">
+              <h2 class="form-title">Send me a message</h2>
+              <div class="form-fields">
+                  <div class="form-group">
+                      <input type="text" class="fname" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="lname" placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="email" placeholder="Mail">
+                  </div>
+                  <div class="form-group">
+                      <input type="number" class="phone" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                      <textarea name="message" id="" placeholder="Write your message"></textarea>
+                  </div>
+              </div>
+              <input type="submit" value="Send Message" class="submit-button">
+          </form>
+      </div>
   </div>
-  <div class="project">
-    <h3>Professional Art Printing data</h3>
-    <button class="probut" id="project-4" type="button">See Project</button>
-  </div>
+</section>
 
    </body>
 </html>

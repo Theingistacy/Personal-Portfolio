@@ -1,9 +1,6 @@
 // You can overwrite bootstrap default values here.
 // Refer node_modules/bootstrap/scss/_variables for a full list of variables.
 
-// $primary: #d97700;
-// $secondary: rgb(34, 255, 0);
-// $danger: #ff36ee;
 
 // $grid-breakpoints: (
 //   xs: 0,
@@ -15,12 +12,18 @@
 // );
 
 // $spacer: 1rem;
-$bg-color:#EBE8E7;
-$text-color:#EA7186;
-$primary-color:#7A77B9;
+$header-bg-color: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+$primary-bg-color:linear-gradient(90deg,#00ccff,#ff00bb);
+$bg-color:#2e2e2e;
+$text-color:#ff1492;
+$primary-color:#9F7BF6;
 $secondary-color:#BD9DEA;
-$deco-color:#F2C76E;
-$text-background: #f3a683;
+$content-border:#020931;
+$content-background: #05104b;
 $text-base: #303952;
 $accent: #786fa6;
 $text-shadow: #e77f67;
+$background-img: linear-gradient(90deg,#00ccff,#ff00bb);
+$text-primary-color:#ffffff;
+$radial-gradient:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+$base-color:#000;

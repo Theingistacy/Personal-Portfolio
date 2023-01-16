@@ -1,21 +1,50 @@
 header {
-  background: #2e2e2e;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	width: 100%;
 	z-index: 1000;
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+// my name logo animation text
+  .logo {
+    border: none;
+    background-image: linear-gradient(90deg,#00ccff,#ff00bb);
+    border-radius: 8px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 10px;
+    position: absolute;
+    animation: slider 3s 1s linear ;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    &:hover{
+      padding: 10px 35px;
+    } 
+  }
 }
+// Animation for logo text
+@keyframes slider {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+  }
+}
+// nav bar start
 nav {
     display: flex;
     justify-content: flex-end;
+    padding: 1.5rem;
   // hamburger menu icon
     .menu-icon {
       cursor: pointer;
-      // float:right;
-      // padding: 28px 20px ;
-      padding: 28px 20px;
+      padding: 20px 20px;
       position: absolute;
       user-select: none;
       .nav-icon {
@@ -35,7 +64,6 @@ nav {
           transition: all .2s ease-out;
           width: 100%;
           top: 5px;
-  
         }
         &:after{
           background:$text-color;
@@ -46,11 +74,8 @@ nav {
           transition: all .2s ease-out;
           width: 100%;
           top: -5px;
-  
         }
-  
       }
-    
     }
   
       ul {
@@ -66,77 +91,83 @@ nav {
               text-decoration: none;
               color: $text-color;
               font-size: 2rem;
+              position: relative;
           }
       }
   }
   .menu {
-    padding-top: 5rem;
+    padding-top: 3rem;
     max-height: 0;
     transition: max-height .2s ease-out;
-     li {
-         a {
-             &:hover {
-                 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-             }
-         }
-     }
- } 
-   
+
+  li{
+    a
+    {
+      &:before {
+        content: "";
+        width: 0;
+        height: 5px;
+        background-color: #00bcd4;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        transition: all 0.5s;
+      }
+      &:after {
+        content: "";
+        width: 0;
+        height: 5px;
+        background-color: #f0f;
+        position: absolute;
+        top: 70%;
+        right: 0;
+        transition: all 0.5s;
+      } 
+     &:hover:before {
+        width: 50%;
+        transform: translateX(100%);
+      }
+      &:hover:after {
+        width: 40%;
+        transform: translateX(-100%);
+      }
+    }
+  } 
+} 
+
+//  Hamburger menu icon for small screen
  .menu-btn {
-    display: none;
-  }
-  .menu-btn:checked ~ .menu {
-    min-height: 300px;
-  }
-  
-  .menu-btn:checked ~ .menu-icon .nav-icon {
-    background: transparent;
-  }
-  
-.menu-btn:checked ~ .menu-icon .nav-icon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .menu-btn:checked ~ .menu-icon .nav-icon:after {
-    transform: rotate(45deg);
-  }
-  
-  .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after {
-    top: 0;
-  }
-// for logo styling
-.logo {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border: none;
-  color:$secondary-color;
-  border-radius: 8px;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 2rem;
-  line-height: 10px;
-  position: absolute;
-  animation: slide 3s 1s linear ;
-  margin-left: 10px;
-  margin-top: 15px;
-  padding: 10px 30px;
-  transition: 0.3s;
-}
-.logo:hover{
-  padding: 10px 35px;
+	display: none;
+	&:checked {
+		~ {
+			.menu {
+				min-height: 300px;
+			}
+			.menu-icon {
+				.nav-icon {
+					background: transparent;
+					&:before {
+						transform: rotate(-45deg);
+					}
+					&:after {
+						transform: rotate(45deg);
+					}
+				}
+				&:not(.steps) {
+					.nav-icon {
+						&:before {
+							top: 0;
+						}
+						&:after {
+							top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-
-@keyframes slide {
-  from {
-    margin-left: 100%;
-  }
-
-  to {
-    margin-left: 10%;
-  }
-}
 
 
 
