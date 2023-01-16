@@ -52,7 +52,6 @@ main {
   }
   .img-container{
     border: 5px solid radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
-    ;
     position: absolute;
     width: 250px;
     height: 250px;
@@ -79,7 +78,7 @@ main {
     transition: 1s;
   h3,h5{
     text-transform: uppercase;
-    background-image:$background-img;
+    background-image:$primary-bg-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
@@ -94,7 +93,6 @@ main {
   .content-btn{
     font-size: 1rem;
     margin-top: 15px;
-    background-color:$bg-color;
     color:$text-primary-color;
     border-radius: 20px;
     border: none;
@@ -109,7 +107,6 @@ main {
   .img-container {
     img{
       width:100%;
-      // filter: grayscale(0);
       object-fit: cover;
     }
   }
@@ -133,7 +130,7 @@ main {
   
   //Text Intro Section
   
-  @keyframes shine {
+  @keyframes fade {
       0% {
           background-position-x: -500%;
       }
@@ -151,7 +148,6 @@ main {
           font-weight: 700;
           font-size: 4rem;
           text-align: center;
-          font-family: Hack, sans-serif;
           text-transform: uppercase;
           background: $radial-gradient;
           letter-spacing: 5px;
@@ -160,7 +156,7 @@ main {
           -webkit-text-fill-color: transparent;
           background-repeat: no-repeat;
           background-size: 80%;
-          animation: shine 7s 2s linear infinite;
+          animation: fade 7s 2s linear infinite;
           position: relative;
       }
   }

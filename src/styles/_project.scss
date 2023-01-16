@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background: $project-bg-color;
   overflow: hidden;
   flex-wrap: wrap;
   opacity: 0.9;
@@ -59,7 +59,7 @@
   bottom: 0;
   padding:3rem;
   text-align: center;
-  background-image: linear-gradient(90deg,#00ccff,#ff00bb);
+  background-image: $primary-bg-color;
   border-radius: 20px;
   opacity: 0;
   transition: 0.5s;
@@ -88,13 +88,13 @@
   padding: 10px 30px;
   transition: 0.3s;
   a{
-    color: #ff00bb;
+    color: $text-color;
     text-decoration: none;
 
   }
   &:hover{
   padding: 10px 40px;
-  background: radial-gradient(circle at 4.3% 10.7%, rgb(138, 118, 249) 13.6%, rgb(75, 252, 235) 100.7%);
+  background: $project-btn-hover;
 }
 }
 
@@ -102,7 +102,7 @@
   position: absolute;
 
  h2{
-  color: #ff00bb;
+  color: $text-color;
   font-size: 5rem;
 }
 }
