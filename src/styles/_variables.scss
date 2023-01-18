@@ -1,17 +1,3 @@
-// You can overwrite bootstrap default values here.
-// Refer node_modules/bootstrap/scss/_variables for a full list of variables.
-
-
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 600px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1400px,
-// );
-
-// $spacer: 1rem;
 $header-bg-color: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
 $primary-bg-color:linear-gradient(90deg,#00ccff,#ff00bb);
 $about-bg-color:linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%);
@@ -28,7 +14,6 @@ $progress-two:linear-gradient(45deg, #3bc0ff, #33ff00);
 $progress-three:linear-gradient(#772f1a , #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
 $progress-four:linear-gradient(45deg, #3bc0ff, #33ffe0);
 $progress-five: linear-gradient(45deg, #ffee54, #ff00ca);
-
 $progress-six:linear-gradient(45deg, #ffee54, #ff00ca);
 $contact-bg-color: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
 $text-color:#ff1492;

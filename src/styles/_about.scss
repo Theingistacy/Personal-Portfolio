@@ -1,6 +1,5 @@
 #about{
     background:$about-bg-color;
-    // min-height:100vh;
     padding: 50px 0;
     position: relative;
 }
@@ -11,10 +10,8 @@
     border-radius: 50%;
     display: block;
     overflow: hidden;
-    // margin: 20px;
     position: absolute;
-    top:5%;
-    left: 40%;
+    left: 42%;
     &:hover {
         transform: scale(1.2);
       }
