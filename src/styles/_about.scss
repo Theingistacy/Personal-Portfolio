@@ -20,7 +20,7 @@
         height: 320px;
         z-index: 1;
     }
-}
+}                               
 
 .about-container{
     background: $primary-color;
@@ -49,8 +49,8 @@
      }
     }
 .dynamic-text {
-    height: 90px;
-    line-height: 90px;
+    max-height: 90px; /* set a maximum height */
+    line-height: 1.5em; /* set line-height to allow for multiple lines */
     overflow: hidden;
     li {
         list-style: none;
